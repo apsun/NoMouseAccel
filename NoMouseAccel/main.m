@@ -6,12 +6,12 @@
 int main(void)
 {
     int ret = 1;
-    const int32_t accelType = INT32_MIN;
-    CFNumberRef accelTypeNum = NULL;
+    const int32_t accel = INT32_MIN;
+    CFNumberRef accelNum = NULL;
     IOHIDEventSystemClientRef client = NULL;
 
-    accelTypeNum = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &accelType);
-    if (!accelTypeNum) {
+    accelNum = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &accel);
+    if (accelNum == NULL) {
         fprintf(stderr, "CFNumberCreate failed\n");
         goto exit;
     }
@@ -22,7 +22,7 @@ int main(void)
         goto exit;
     }
     
-    if (!IOHIDEventSystemClientSetProperty(client, CFSTR(kIOHIDMouseAccelerationType), accelTypeNum)) {
+    if (!IOHIDEventSystemClientSetProperty(client, CFSTR(kIOHIDMouseAccelerationType), accelNum)) {
         fprintf(stderr, "IOHIDEventSystemClientSetProperty failed\n");
         goto exit;
     }
@@ -31,6 +31,6 @@ int main(void)
     
 exit:
     if (client != NULL) CFRelease(client);
-    if (accelTypeNum != NULL) CFRelease(accelTypeNum);
+    if (accelNum != NULL) CFRelease(accelNum);
     return ret;
 }
