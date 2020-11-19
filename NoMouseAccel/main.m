@@ -15,20 +15,20 @@ int main(void)
         fprintf(stderr, "CFNumberCreate failed\n");
         goto exit;
     }
-    
+
     client = IOHIDEventSystemClientCreateSimpleClient(kCFAllocatorDefault);
     if (client == NULL) {
         fprintf(stderr, "IOHIDEventSystemClientCreateSimpleClient failed\n");
         goto exit;
     }
-    
+
     if (!IOHIDEventSystemClientSetProperty(client, CFSTR(kIOHIDMouseAccelerationType), accelNum)) {
         fprintf(stderr, "IOHIDEventSystemClientSetProperty failed\n");
         goto exit;
     }
-    
+
     ret = 0;
-    
+
 exit:
     if (client != NULL) CFRelease(client);
     if (accelNum != NULL) CFRelease(accelNum);
