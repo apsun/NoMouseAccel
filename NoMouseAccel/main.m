@@ -6,7 +6,7 @@
 int main(void)
 {
     int ret = 1;
-    const int32_t accel = INT32_MIN;
+    const int32_t accel = -1;
     CFNumberRef accelNum = NULL;
     IOHIDEventSystemClientRef client = NULL;
 
