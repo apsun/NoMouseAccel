@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		494E6C372564F065009C2B13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 494E6C362564F065009C2B13 /* main.m */; };
+		494E6C372564F065009C2B13 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 494E6C362564F065009C2B13 /* main.c */; };
 		494E6C642564F7D0009C2B13 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E6C632564F7D0009C2B13 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		494E6C2A2564F064009C2B13 /* NoMouseAccel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoMouseAccel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494E6C352564F065009C2B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		494E6C362564F065009C2B13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		494E6C362564F065009C2B13 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		494E6C602564F758009C2B13 /* NoMouseAccel.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NoMouseAccel.entitlements; sourceTree = "<group>"; };
 		494E6C632564F7D0009C2B13 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 			children = (
 				494E6C602564F758009C2B13 /* NoMouseAccel.entitlements */,
 				494E6C352564F065009C2B13 /* Info.plist */,
-				494E6C362564F065009C2B13 /* main.m */,
+				494E6C362564F065009C2B13 /* main.c */,
 			);
 			path = NoMouseAccel;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 		494E6C222564F064009C2B13 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					494E6C292564F064009C2B13 = {
 						CreatedOnToolsVersion = 12.2;
@@ -132,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				494E6C372564F065009C2B13 /* main.m in Sources */,
+				494E6C372564F065009C2B13 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +256,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NoMouseAccel/NoMouseAccel.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 23S4K4RW8P;
 				INFOPLIST_FILE = NoMouseAccel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -274,8 +276,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NoMouseAccel/NoMouseAccel.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 23S4K4RW8P;
 				INFOPLIST_FILE = NoMouseAccel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

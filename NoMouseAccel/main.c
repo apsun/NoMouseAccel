@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
-#import <IOKit/hidsystem/IOHIDEventSystemClient.h>
-#import <IOKit/hid/IOHIDProperties.h>
+#include <IOKit/hidsystem/IOHIDEventSystemClient.h>
+#include <IOKit/hid/IOHIDProperties.h>
 
 int main(void)
 {
