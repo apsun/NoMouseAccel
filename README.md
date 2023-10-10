@@ -1,3 +1,11 @@
+macOS Sonoma now has an option to disable Pointer Acceleration built in to the System Settings:
+
+https://apple.stackexchange.com/a/461057/36202
+
+<img src="https://user-images.githubusercontent.com/74698406/268474477-8d7a1382-35bb-4639-87ac-c5e1b737b09d.png" />
+
+---
+
 # NoMouseAccel
 
 This app disables mouse acceleration on macOS.
